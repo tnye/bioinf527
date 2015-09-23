@@ -8,7 +8,7 @@ infile = open(filename)
 out = open(filename.replace(".csv",'.txt'), "w") #file to write to
 
 for line in infile:
-	line = line.replace(",","\t")
+	line = line.replace(",","\s")
 	out.write(line )
 
 infile.close()
